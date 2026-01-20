@@ -88,20 +88,6 @@ Screenshots of pivot tables and visualizations illustrating the insights are inc
 
 ---
 
-## 🔗 Repository Structure
-ecommerce-sales-analysis-excel/
-├── README.md
-├── screenshots/
-│ ├── total_revenue.png
-│ ├── category_wise_revenue.png
-│ ├── payment_method_revenue.png
-│ ├── monthly_sales_trend.png
-│ └── discount_vs_revenue.png
-└── data
-
-
----
-
 ## 📌 Conclusion & Next Steps
 This analysis provides a clear understanding of key revenue drivers in the e-commerce dataset. It can help businesses prioritize product categories, optimize payment experiences, and adjust discount strategies to maximize revenue.
 
