@@ -1,100 +1,108 @@
+# 📊 Social Media Engagement Analysis | SQL + Power BI
 
-## E-commerce Sales Performance Analysis |  Excel
-
-## Project Overview
-This is a data analysis project focused on analyzing e-commerce sales transaction data using Microsoft Excel. The primary goal of this project is to extract meaningful insights about revenue performance, product categories, payment preferences, monthly trends, and the impact of discount strategies. The analysis supports data-driven decision-making for business stakeholders.
-
----
-
-## 🧠 Objective
-The key objectives of this project include:
-
-1. **Quantify Overall Revenue**  
-   Determine total revenue generated from all e-commerce transactions in the dataset.
-
-2. **Evaluate Category Performance**  
-   Identify which product categories contribute the most to overall revenue.
-
-3. **Analyze Payment Methods**  
-   Assess revenue distribution by payment method to understand customer preferences.
-
-4. **Explore Monthly Sales Trends**  
-   Analyze how revenue varies across different months to identify seasonal patterns.
-
-5. **Assess Discount Impact**  
-   Examine how different discount levels affect total revenue generated.
+## 📌 Project Overview
+This project analyzes social media engagement and sentiment data to identify key drivers of user interaction and content performance. It explores how sentiment and toxicity influence engagement, helping improve content strategy, platform growth, and user experience.
 
 ---
 
-## 📊 Methodology
-The steps followed in this analysis include:
-
-1. **Data Understanding & Cleaning**  
-   • Reviewed and formatted raw dataset  
-   • Handled missing values and ensured data consistency
-
-2. **Pivot Table Creation**  
-   • Used Excel Pivot Tables to compute aggregates  
-   • Summarized data by category, payment method, and month
-
-3. **Visualization**  
-   • Created charts to visualize revenue trends  
-   • Used tables and graphs to support insights
-
-4. **Insights Derivation**  
-   • Interpreted results to answer key business questions
+## 🎯 Objectives
+- Analyze overall engagement across platforms and content types  
+- Identify top-performing platforms based on engagement metrics  
+- Evaluate content categories driving the highest interaction  
+- Understand the impact of sentiment and emotional tone on engagement  
+- Examine how toxicity affects user interaction  
+- Analyze time-based engagement trends and growth patterns  
 
 ---
 
-## 💡 Key Insights
+## 🧠 Business Problem
+Social media platforms aim to maximize meaningful engagement while maintaining healthy community interactions.
 
-### ✔ Total Revenue
-- The total revenue generated from the dataset was **₹757,278.08**.
+Understanding:
+- What type of content performs best  
+- Which platforms drive engagement  
+- How sentiment and toxicity impact performance  
 
-### ✔ Category Performance
-- **Clothing** was the highest revenue-generating category, followed by Books and Home & Kitchen.
-
-### ✔ Payment Method Analysis
-- **Credit Card** transactions contributed the highest revenue among all payment methods.
-
-### ✔ Monthly Trend
-- **October** recorded the highest monthly revenue.
-- **November** had the lowest revenue in the dataset.
-
-### ✔ Discount Impact
-- Transactions with **low to moderate discounts (0–5%)** generated more revenue than those with heavy discounts (e.g., 30% or 50%).
+...is essential for improving user retention, platform growth, and trust & safety strategies.
 
 ---
 
-## 📁 Dataset
-The dataset consists of **3,000+ e-commerce transaction records** containing information such as:
-- Purchase Date  
-- Product Category  
-- Payment Method  
-- Discount (%)  
-- Final Price (Rs.)
+## 🗂️ Dataset
+- **Source:** https://www.kaggle.com/datasets/subashmaster0411/social-media-engagement-dataset  
+- **Type:** Synthetic post-level data  
 
-A sample of the data is provided for replication and verification.
-
----
-
-## 🖼 Visuals
-Screenshots of pivot tables and visualizations illustrating the insights are included in the `screenshots/` folder.
+### Features:
+- Platform, topic category, location, language  
+- Likes, shares, comments, impressions  
+- Engagement rate  
+- Sentiment & emotion indicators  
+- Toxicity scores  
+- Brand & campaign data  
 
 ---
 
-## 🛠 Tools Used
-- Microsoft Excel (Pivot Tables, Charts)
+## 🏗️ Data Modeling & SQL Design
+The dataset was transformed from a flat structure into a normalized relational schema.
+
+### Tables:
+- `posts` → core metadata  
+- `engagement` → interaction metrics  
+- `sentiment` → sentiment & toxicity  
+- `campaigns` → campaign/brand data  
+
+📄 Schema: `sql/schema_and_setup.sql`
 
 ---
 
-## 📌 Conclusion & Next Steps
-This analysis provides a clear understanding of key revenue drivers in the e-commerce dataset. It can help businesses prioritize product categories, optimize payment experiences, and adjust discount strategies to maximize revenue.
-
-Future enhancements may include building interactive dashboards using BI tools (Power BI, Tableau) and extending the analysis with predictive models.
+## 🔍 Key Business Questions
+- Which platforms drive the highest engagement?  
+- Which content categories perform best?  
+- How does sentiment affect engagement rates?  
+- Does toxicity reduce engagement?  
+- How has engagement changed over time?  
+- Which time periods show peak engagement?  
+- Do high impressions convert into engagement?  
 
 ---
 
-## 📍 Source
-Original dataset: [Kaggle e-commerce dataset](https://www.kaggle.com/datasets/steve1215rogg/e-commerce-dataset)
+## ⚙️ Analysis Approach
 
+### Data Preparation
+- Data cleaning and validation  
+- Data type standardization  
+
+### SQL Analysis
+- Multi-table JOINs  
+- Aggregations and KPI calculations  
+- CASE statements for segmentation  
+
+📄 Queries:
+- `sql/02_kpi_analysis.sql`  
+- `sql/03_time_and_growth_analysis.sql`  
+
+### Time-Based Analysis
+- Trend and growth analysis  
+
+### Visualization (Planned)
+- Power BI dashboards  
+
+---
+
+## 📈 Key Insights
+- Some platforms consistently outperform others in engagement  
+- Certain content categories drive higher interaction  
+- Positive sentiment correlates with higher engagement  
+- Higher toxicity tends to reduce engagement  
+- Engagement varies across time periods  
+- High impressions do not always convert into engagement  
+
+---
+
+## 🛠️ Tools & Technologies
+- MySQL  
+- SQL (JOINs, aggregations, CASE statements)  
+- Power BI  
+
+---
+
+## 📁 Repository Structure
