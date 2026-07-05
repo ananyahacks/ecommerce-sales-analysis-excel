@@ -1,4 +1,4 @@
-# 🛒 E-commerce Sales Analysis & Customer Segmentation | SQL + Power BI
+# 🛒 E-commerce Sales Analysis & Customer Segmentation | Excel + SQL
 
 ## 📌 Project Overview
 
@@ -21,22 +21,14 @@ This project analyzes e-commerce sales data to identify revenue trends, customer
 
 E-commerce businesses generate large volumes of transactional data every day.
 
-Understanding:
-
 - Which product categories generate the highest revenue
 - Which customers contribute the most sales
 - How sales change across different time periods
 - Which products require inventory attention
 
-...helps businesses optimize marketing strategies, improve inventory planning, and maximize revenue.
-
+An appropriate understanding of this will help businesses optimize marketing strategies, improve inventory planning, and maximize revenue.
 ---
 
-## 🗂️ Dataset
-
-**Source:** Kaggle E-commerce Sales Dataset *(or specify the exact source if different)*
-
-**Type:** Transaction-level sales data
 
 ### Features
 
@@ -64,9 +56,6 @@ The raw transactional dataset was cleaned and transformed into a normalized rela
 - orders → order-level information
 - order_details → purchased products and quantities
 
-*(Replace these with your actual table names if they differ.)*
-
-📄 **Schema:** `sql/schema_and_setup.sql`
 
 ---
 
@@ -125,7 +114,7 @@ The raw transactional dataset was cleaned and transformed into a normalized rela
 - MySQL
 - SQL (JOINs, GROUP BY, Aggregations, CASE statements)
 - Excel
-- Power BI
+
 
 ---
 
